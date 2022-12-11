@@ -1,0 +1,100 @@
+{
+    "assertions": [
+        {
+            "check_permission": {
+                "subject": {
+                    "type": "user",
+                    "key": "rick"
+                },
+                "permission": {
+                    "name": "delete-todo"
+                },
+                "object": {
+                    "type": "todo",
+                    "key": "rick-todo"
+                }
+            },
+            "expected": true
+        },
+        {
+            "check_permission": {
+                "subject": {
+                    "type": "user",
+                    "key": "rick"
+                },
+                "permission": {
+                    "name": "edit-todo"
+                },
+                "object": {
+                    "type": "todo",
+                    "key": "rick-todo"
+                }
+            },
+            "expected": true
+        },
+        {
+            "check_permission": {
+                "subject": {
+                    "type": "user",
+                    "key": "morty"
+                },
+                "permission": {
+                    "name": "delete-todo"
+                },
+                "object": {
+                    "type": "todo",
+                    "key": "rick-todo"
+                }
+            },
+            "expected": false
+        },
+        {
+            "check_permission": {
+                "subject": {
+                    "type": "user",
+                    "key": "morty"
+                },
+                "permission": {
+                    "name": "edit-todo"
+                },
+                "object": {
+                    "type": "todo",
+                    "key": "rick-todo"
+                }
+            },
+            "expected": true
+        },
+        {
+            "check_permission": {
+                "subject": {
+                    "type": "user",
+                    "key": "jerry"
+                },
+                "permission": {
+                    "name": "view-todo"
+                },
+                "object": {
+                    "type": "todo",
+                    "key": "rick-todo"
+                }
+            },
+            "expected": true
+        },        
+        {
+            "check_permission": {
+                "subject": {
+                    "type": "user",
+                    "key": "jerry"
+                },
+                "permission": {
+                    "name": "edit-todo"
+                },
+                "object": {
+                    "type": "todo",
+                    "key": "summer-todo"
+                }
+            },
+            "expected": true
+        }
+    ]
+}

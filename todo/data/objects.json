@@ -1,0 +1,59 @@
+{
+    "objects": [
+        {
+            "key": "rick",
+            "type": "user",
+            "displayName": "Rick Sanchez"
+        },
+        {
+            "key": "morty",
+            "type": "user",
+            "displayName": "Morty Smith"
+        },
+        {
+            "key": "beth",
+            "type": "user",
+            "displayName": "Beth Smith"
+        },
+        {
+            "key": "jerry",
+            "type": "user",
+            "displayName": "Jerry Smith"
+        },
+        {
+            "key": "summer",
+            "type": "user",
+            "displayName": "Summer Smith"
+        },
+        {
+            "key": "todo-creators",
+            "type": "group",
+            "displayName": "Todo Creators"
+        },
+        {
+            "key": "todo-editors",
+            "type": "group",
+            "displayName": "Todo Editors"
+        },
+        {
+            "key": "todo-viewers",
+            "type": "group",
+            "displayName": "Todo Viewers"
+        },
+        {
+            "key": "morty-todo",
+            "type": "todo",
+            "displayName": "Morty's Todo"
+        },
+        {
+            "key": "rick-todo",
+            "type": "todo",
+            "displayName": "Rick's Todo"
+        },
+        {
+            "key": "summer-todo",
+            "type": "todo",
+            "displayName": "Summer's todo"
+        }
+    ]
+}

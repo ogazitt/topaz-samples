@@ -1,0 +1,25 @@
+---
+# todo (object type)
+todo:
+  # todo:owner (object relation)
+  owner:
+    # incl permissions of other object relations on the same object type
+    union: 
+    - editor
+    - viewer
+    permissions:
+    - delete-todo
+
+  # todo:editor (object relation)
+  editor:
+    union: 
+    - viewer
+    permissions:
+    - edit-todo
+
+  # todo:viewer (object relation)
+  viewer:
+    union:
+    permissions:
+    - list-todos
+    - view-todos

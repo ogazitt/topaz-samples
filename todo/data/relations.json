@@ -1,0 +1,103 @@
+{
+    "relations": [
+        {
+            "subject": {
+                "type": "user",
+                "key": "rick"
+            },
+            "relation": "owner",
+            "object": {
+                "type": "todo",
+                "key": "rick-todo"
+            }
+        },
+        {
+            "subject": {
+                "type": "user",
+                "key": "morty"
+            },
+            "relation": "owner",
+            "object": {
+                "type": "todo",
+                "key": "morty-todo"
+            }
+        },
+        {
+            "subject": {
+                "type": "user",
+                "key": "summer"
+            },
+            "relation": "owner",
+            "object": {
+                "type": "todo",
+                "key": "summer-todo"
+            }
+        },
+        {
+            "subject": {
+                "type": "user",
+                "key": "jerry"
+            },
+            "relation": "viewer",
+            "object": {
+                "type": "todo",
+                "key": "summer-todo"
+            }
+        },
+        {
+            "subject": {
+                "type": "user",
+                "key": "rick"
+            },
+            "relation": "member",
+            "object": {
+                "type": "group",
+                "key": "todo-creators"
+            }
+        },
+        {
+            "subject": {
+                "type": "user",
+                "key": "morty"
+            },
+            "relation": "member",
+            "object": {
+                "type": "group",
+                "key": "todo-creators"
+            }
+        },
+        {
+            "subject": {
+                "type": "user",
+                "key": "summer"
+            },
+            "relation": "member",
+            "object": {
+                "type": "group",
+                "key": "todo-editors"
+            }
+        },
+        {
+            "subject": {
+                "type": "user",
+                "key": "beth"
+            },
+            "relation": "member",
+            "object": {
+                "type": "group",
+                "key": "todo-editors"
+            }
+        },
+        {
+            "subject": {
+                "type": "user",
+                "key": "jerry"
+            },
+            "relation": "member",
+            "object": {
+                "type": "group",
+                "key": "todo-viewers"
+            }
+        }
+    ]
+}
